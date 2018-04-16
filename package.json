@@ -8,8 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-  	"start": "node telebot.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  	"start": "node telebot.js"
   },
   "repository": {
     "type": "git",
