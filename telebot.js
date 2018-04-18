@@ -1,7 +1,17 @@
+const express = require('express');
 const TelegramBot = require('node-telegram-bot-api');
 const token = '558035018:AAHRmoKtyLUgU6WmqIxUOxhkjuGrrdRxvjY';
 const bot = new TelegramBot(token, {polling: true});
 const fs=require('fs');
+const express = require('express');
+var app=express();
+app.set('port', (process.env.PORT || 5000));
+app.get('/', function(request, response) {
+    var result = 'App is running'
+    response.send(result);
+}).listen(app.get('port'), function() {
+    console.log('App is running, server is listening on port ', app.get('port'));
+});
 bot.on('message', (msg) => {
         if (msg.text.toString().toLowerCase()=="hi")
         {
@@ -30,12 +40,6 @@ bot.onText(/\/sendpic/, (msg) => {
                 }
         );
 });
-/*bot.onText(/\/link (.+)/, (msg, match) => {
-  const chatId = msg.chat.id;
-  const resp = match[1];
-  console.log(match);
-  bot.sendDocument(chatId, resp);
-});*/
 bot.onText(/\/link/,(msg)=> {
   bot.sendDocument(msg.chat.id, "https://github.com/prasanth-G24/clouddemo/archive/master.zip");
 });
