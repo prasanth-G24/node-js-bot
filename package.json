@@ -9,10 +9,13 @@
   "devDependencies": {},
   "scripts": {
   	"start": "node telebot.js"
+<<<<<<< HEAD
   },
   "engines": {
     "node": ">=0.10.22",
     "npm": ">=1.3.14"
+=======
+>>>>>>> 9a67b134251afaa06bb304fb0d90bf82a28cc095
   },
   "repository": {
     "type": "git",
@@ -25,7 +28,8 @@
   "author": "prasanth",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/prasanth-G24/node-js-bot/issues"
+    "url": "https://github.com/prasanth-G24/node-js-bot/issues",
+    "email": "prasanthmaverick@gmail.com"
   },
   "homepage": "https://github.com/prasanth-G24/node-js-bot#readme"
 }
