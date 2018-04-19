@@ -2,10 +2,10 @@ const express = require('express');
 const TelegramBot = require('node-telegram-bot-api');
 const token = '558035018:AAHRmoKtyLUgU6WmqIxUOxhkjuGrrdRxvjY';
 const bot = new TelegramBot(token, {polling: true});
-const http = require("http");
+/*const http = require("http");
 setInterval(function(){
         http.get("http://telegram-bot-node-js.herokuapp.com");
-}, 300000);
+}, 300000);*/
 const app=express();
 app.set('port', (process.env.PORT || 5000));
 app.get('/', function(request, response) {
