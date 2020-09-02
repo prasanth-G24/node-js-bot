@@ -1,6 +1,6 @@
 const express = require('express');
 const TelegramBot = require('node-telegram-bot-api');
-const token = '035018:AAHRmoKtyLUgU6WmqIxUOxhkjuGrrdRxvjY';
+const token = 'Token';
 const bot = new TelegramBot(token, {polling: true});
 /*const http = require("http");
 setInterval(function(){
