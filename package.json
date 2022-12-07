@@ -4,7 +4,7 @@
   "description": "telegram bot created for personal use",
   "main": "telebot.js",
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.18.2",
     "node-telegram-bot-api": "^0.30.0"
   },
   "devDependencies": {},
